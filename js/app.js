@@ -52,7 +52,7 @@ var checkTemperature = function() {
     $("#userGuess").val(randomNumber + "!");
     wonGame = true;
   } else if (distanceFromNumber < 2 ) {
-    AddFeedback("Scalding!");
+    AddFeedback("You are too hot to handle!");
   } else if (distanceFromNumber < 4 ) {
     AddFeedback("Very Hot!");
   } else if (distanceFromNumber < 8 ) {
@@ -60,13 +60,13 @@ var checkTemperature = function() {
   } else if (distanceFromNumber < 13 ) {
     AddFeedback("Warm");
   } else if (distanceFromNumber < 23 ) {
-    AddFeedback("Luke Warm");
-  } else if (distanceFromNumber < 38 ) {
     AddFeedback("Cool");
+  } else if (distanceFromNumber < 38 ) {
+    AddFeedback("Feeling chilly");
   } else if (distanceFromNumber < 54 ) {
-    AddFeedback("Cold");
+    AddFeedback("Cold!");
   } else {
-    AddFeedback("Ice Cold!");
+    AddFeedback("Your sweaters need sweaters!");
   }
 };
 
